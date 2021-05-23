@@ -70,7 +70,7 @@ namespace Catalog.API.Repositories
 
         }
 
-        public async Task CrateProduct(Product product)
+        public async Task CreateProduct(Product product)
         {
             await _context.Products.InsertOneAsync(product);
         }
